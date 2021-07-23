@@ -14,6 +14,16 @@ a {
     text-decoration: none;
 }
 
+#active,
+#cv,
+#projects {
+    text-decoration: underline;
+    text-decoration-color: rgb(180, 216, 233);
+    text-decoration-style: double;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 1em;
+}
+
 .visit-card {
     background-color: whitesmoke;
     padding: 20px;
@@ -145,18 +155,14 @@ mark {
 .ul-list-menu-fixed ul li a {
     color: #333;
     text-decoration: none;
-    text-transform: uppercase;
-    transition: 0s;
     position: relative;
     max-height: 20px;
     overflow: hidden;
-    display: flex;
     flex-direction: column;
     font-weight: lighter !important;
 }
 
 .ul-list-menu-fixed ul li a span {
-    transition: .5s;
     font-size: 14px;
     opacity: .7;
     font-weight: 500 !important;
@@ -256,8 +262,8 @@ mark {
     padding-top: 0;
 }
 
-.headers h3 {
-    padding-top: 40px !important;
+.headers {
+    padding-top: 40px;
     font-size: 20px !important;
     color: #333;
     font-family: Arial, Helvetica, sans-serif;

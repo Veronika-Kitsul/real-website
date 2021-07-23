@@ -12,7 +12,6 @@ a {
 .visit-card {
     background-color: whitesmoke;
     padding: 20px;
-    padding-bottom: 40px;
     margin-left: 40px;
     margin-right: 40px;
     margin-top: 20px;
@@ -20,6 +19,19 @@ a {
     margin-bottom: 60px;
     display: flex;
     justify-content: space-between;
+}
+
+.visit-card-cv {
+    background-color: whitesmoke;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    min-height: 450px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
 }
 
 .visit-card h4 {

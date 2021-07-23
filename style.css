@@ -24,6 +24,14 @@ a {
     text-underline-offset: 1em;
 }
 
+.left-side-menu-fixed a:hover {
+    text-decoration: underline !important;
+    text-decoration-color: rgb(104, 208, 226) !important;
+    text-decoration-style: double !important;
+    text-decoration-thickness: 2px !important;
+    text-underline-offset: 1em !important;
+}
+
 .visit-card {
     background-color: whitesmoke;
     padding: 20px;
@@ -119,7 +127,7 @@ mark {
     margin-left: 40px;
 }
 
-.logo-menu-fixed h1 {
+.left-side-menu-fixed h1 {
     font-size: 30px;
     line-height: 30px;
     color: #333;
@@ -127,12 +135,12 @@ mark {
     letter-spacing: 7px !important;
 }
 
-.logo-menu-fixed p {
-    font-weight: 200 !important;
+.left-side-menu-fixed p {
+    font-weight: 300 !important;
     font-size: 17px;
     margin-left: 0px;
     line-height: 0;
-    transform: translateY(-13.5px);
+    transform: translateY(-13.2px);
     opacity: .7;
     letter-spacing: .5px;
 }
@@ -267,4 +275,23 @@ mark {
     font-size: 20px !important;
     color: #333;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.underline-cv-page {
+    color: #333;
+    text-decoration: underline;
+    text-decoration-color: rgb(180, 216, 233);
+    text-decoration-style: double;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.2em;
+}
+
+.underline-cv-page:hover {
+    color: #333;
+    font-size: 17px;
+    text-decoration: underline;
+    text-decoration-color: rgb(104, 208, 226);
+    text-decoration-style: double;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.2em;
 }

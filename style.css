@@ -295,3 +295,16 @@ mark {
     text-decoration-thickness: 2px;
     text-underline-offset: 0.2em;
 }
+
+.project-text {
+    display: inline-block;
+    float: left;
+    width: 50%;
+}
+
+.project-text p {}
+
+.project-picture {
+    display: inline-block;
+    float: right;
+}

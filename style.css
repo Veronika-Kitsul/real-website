@@ -14,7 +14,19 @@ a {
     text-decoration: none;
 }
 
-#active,
+.logo-menu-fixed:hover:after {
+    content: '';
+    left: 0;
+    right: 29px;
+    border-top: solid 2px rgb(180, 216, 233);
+    border-bottom: solid 2px rgb(180, 216, 233);
+    transform: translateY(-2px);
+    position: absolute;
+    height: 1px;
+    bottom: 0;
+    opacity: 1;
+}
+
 #cv,
 #projects {
     text-decoration: underline;
@@ -24,12 +36,34 @@ a {
     text-underline-offset: 1em;
 }
 
-.left-side-menu-fixed a:hover {
+.ul-list-menu-fixed a:hover {
     text-decoration: underline !important;
-    text-decoration-color: rgb(104, 208, 226) !important;
+    text-decoration-color: rgb(180, 216, 233) !important;
     text-decoration-style: double !important;
     text-decoration-thickness: 2px !important;
     text-underline-offset: 1em !important;
+}
+
+#active {
+    text-decoration: none !important;
+}
+
+#active:after {
+    content: '';
+    left: 0;
+    right: 29px;
+    border-top: solid 2px rgb(180, 216, 233);
+    border-bottom: solid 2px rgb(180, 216, 233);
+    transform: translateY(-2px);
+    position: absolute;
+    height: 1px;
+    bottom: 0;
+    opacity: 1;
+}
+
+#active:hover:after {
+    border-top: solid 2px rgb(104, 208, 226);
+    border-bottom: solid 2px rgb(104, 208, 226);
 }
 
 .visit-card {
@@ -125,6 +159,7 @@ mark {
     justify-content: space-between;
     padding-right: 30px;
     margin-left: 40px;
+    position: relative;
 }
 
 .left-side-menu-fixed h1 {
@@ -140,8 +175,8 @@ mark {
     font-size: 17px;
     margin-left: 0px;
     line-height: 0;
-    transform: translateY(-13.2px);
-    opacity: .7;
+    color: #777;
+    transform: translateY(-12px);
     letter-spacing: .5px;
 }
 
@@ -177,7 +212,7 @@ mark {
 }
 
 
-/* education page styles  */
+/* CV page styles  */
 
 .education-text {
     padding-left: 20px;
@@ -297,14 +332,37 @@ mark {
 }
 
 .project-text {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     float: left;
-    width: 50%;
+    margin-left: 20px;
+    margin-right: 50px !important;
+    width: 540px;
 }
 
-.project-text p {}
+.project-text p {
+    line-height: 22px;
+    text-align: justify;
+}
+
+.project-text h4 {
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.5;
+}
 
 .project-picture {
-    display: inline-block;
-    float: right;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.media-body-container {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
 }

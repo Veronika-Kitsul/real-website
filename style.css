@@ -367,3 +367,14 @@ mark {
     justify-content: space-between;
     grid-template-columns: 1fr 1fr;
 }
+
+.stem-text {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    float: left;
+    margin-left: 20px;
+    margin-right: 50px !important;
+    text-align: justify;
+    line-height: 22px;
+}

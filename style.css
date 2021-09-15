@@ -28,7 +28,8 @@ a {
 }
 
 #cv,
-#projects {
+#projects,
+#stem {
     text-decoration: underline;
     text-decoration-color: rgb(180, 216, 233);
     text-decoration-style: double;

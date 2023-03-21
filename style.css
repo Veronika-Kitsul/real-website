@@ -53,8 +53,8 @@ a {
     content: '';
     left: 0;
     right: 29px;
-    border-top: solid 2px rgb(180, 216, 233);
-    border-bottom: solid 2px rgb(180, 216, 233);
+    border-top: solid 2px rgb(255, 134, 34);
+    border-bottom: solid 2px rgb(255, 134, 34);
     transform: translateY(-2px);
     position: absolute;
     height: 1px;
